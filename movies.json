@@ -5,7 +5,9 @@
             "rating": "Not Rated",
             "runtime": "1 Hour 42 Min",
             "released": [1948, 5, 20],
-            "country": "USA",
+            "video": {
+               "url": "https://www.youtube.com/watch?v=c18WhJb80h4"
+            },
             "posters": ["img/Poster 1 for the Pirate.jpg", "img/Poster 2 for the Pirate.jpg", "img/Poster 3 for the Pirate.jpg"],
             "imdb": "https://www.imdb.com/title/tt0040694/",
             "likes": 1021,
@@ -18,7 +20,9 @@
             "rating": "PG",
             "runtime": "2 Hours 0 Min",
             "released": [2015, 8, 14],
-            "country": "USA",
+            "video": {
+                  "url": "https://www.youtube.com/watch?v=MaOZiu-hnTM"
+            },
             "posters": ["img/", "img/godfather_2.jpg", "img/godfather_3.jpg"],
             "imdb": "https://www.imdb.com/title/tt3154310/",
             "likes": 928,
@@ -31,7 +35,9 @@
             "rating": "R",
             "runtime": "2 Hour 14 Min",
             "released": [2014, 6, 20],
-            "country": "USA",
+            "video": {
+                  "url": "https://www.youtube.com/watch?v=drpTj5jJXYk&t=6s"
+            },
             "posters": ["", "img/godfather2_2.jpg"],
             "imdb": "https://www.imdb.com/title/tt1742044/",
             "likes": 855,
@@ -44,7 +50,9 @@
             "rating": "R",
             "runtime": "1 Hour 49 Min",
             "released": [2024, 8, 31],
-            "country": "USA",
+            "video": {
+                  "url": "https://www.youtube.com/watch?v=iZ9O_tl5Npk"
+            },
             "posters": [""],
             "imdb": "https://www.imdb.com/title/tt27657135/",
             "likes": 812,
@@ -57,7 +65,9 @@
             "rating": "PG-13",
             "runtime": "2 Hour 0 Min",
             "released": [1959, 3, 19],
-            "country": "USA",
+            "video": {
+                  "url": "https://www.youtube.com/watch?v=97TYs2YXbJw"
+            },
             "posters": ["img/schindlerslist.jpg"],
             "imdb": "https://www.imdb.com/title/tt0053291/",
             "likes": 812,
@@ -70,7 +80,9 @@
             "rating": "PG-13",
             "runtime": "1 Hour 34 Min",
             "released": [1992, 2, 14],
-            "country": "USA",
+            "video": {
+                  "url": "https://www.youtube.com/watch?v=r7nCIztbomg"
+            },
             "posters": ["img/schindlerslist.jpg"],
             "imdb": "https://www.imdb.com/title/tt0105793/",
             "likes": 812,
@@ -83,9 +95,11 @@
             "rating": "R",
             "runtime": "2 Hour 1 Min",
             "released": [2019, 5, 31],
-            "country": "USA",
+            "video": {
+                  "url": "https://www.youtube.com/watch?v=S3vO8E2e6G0"
+            },
             "posters": ["img/schindlerslist.jpg"],
-            "imdb": "https://www.imdb.com/title/tt2066051/",
+            "imdb": "",
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
@@ -96,7 +110,9 @@
             "rating": "PG-13",
             "runtime": "2 Hour 3 Min",
             "released": [1962, 4, 22],
-            "country": "USA",
+            "video": {
+                  "url": "https://www.youtube.com/watch?v=hP77V2X1Biw"
+            },
             "posters": ["img/schindlerslist.jpg"],
             "imdb": "https://www.imdb.com/title/tt0056217/",
             "likes": 812,
@@ -109,7 +125,9 @@
             "rating": "PG-13",
             "runtime": "1 Hour 30 Min",
             "released": [1998, 6, 26],
-            "country": "USA",
+            "video": {
+                  "url": "https://www.youtube.com/watch?v=LWbtxG-jXMY"
+            },
             "posters": ["img/schindlerslist.jpg"],
             "imdb": "https://www.imdb.com/title/tt0118998/",
             "likes": 812,
@@ -117,14 +135,16 @@
             "posterindex": 0
       },
            {
-            "title": "Dr. Dolittle",
-            "iscore": 5.4,
+            "title": "Pitch Perfect",
+            "iscore": 7.1,
             "rating": "PG-13",
-            "runtime": "1 Hour 30 Min",
-            "released": [1998, 6, 26],
-            "country": "USA",
+            "runtime": "1 Hour 52 Min",
+            "released": [2012, 9, 28],
+            "video": {
+                  "url": "https://www.youtube.com/watch?v=8dItOM6eYXY"
+            },
             "posters": ["img/schindlerslist.jpg"],
-            "imdb": "https://www.imdb.com/title/tt0118998/",
+            "imdb": "https://www.imdb.com/title/tt1981677/",
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0

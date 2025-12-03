@@ -9,7 +9,7 @@
 //    iscore (Number): the IMDB score
 //    rating (String): the movie's MPAA rating
 //    released (Array): the release date. Note that the order of the array is:  YYYY, MM, DD
-//    country (String): the country of production
+//    video (String): A video for the movie
 //    posters (Array): an array of String values with the URL to movie posters (in your img/ directory)
 //    imdb (String): the URL to the corresponding IMDB website
 //    website (String): the URL to the corresponding official website
