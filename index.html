@@ -36,22 +36,36 @@
 
 	        <div class="col-md-6">
 	            <div class="thumbnail">
-
+                   <div class="row">
+						
+						<div class="imageInfo">{{movie.posterindex}}</div>
+						    
+                        <!--I used AI to break down step 6 for me, it helped me make the loop and do a card for each movie-->
+						<div v-for="(movie, index) in movies" :key="index">
+							{{ index }} - {{ movie.title }}
+						<div class="card h-100">
 						<img v-if="movies.length" :src="movies[0].posters[movies[0].posterindex]" class="poster img-fluid" alt="Movie poster" />
-						<div class="imageInfo">{{posterindex}}</div>
-
-						<p class="title">{{movie.title}}</p>
-						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{iscore}} </p>
-						<p class="runtime">Runtime: {{runtime}}</p>
-						<p class="released">Released: {{released}} | Rated: {{rating}}</p>
-						<p class="websites">IMBD: <a> {{imdb}} </a></p>
-						<p class="clip">Clip: <a>{{url}}</a></p>
-
+ 						<div class="imageInfo">{{movie.posterindex}}</div>
+						<div class="card-body">
+			<h5 class="card-title">{{movies[0].title}}</h5>
+			          <p class="card-text">
+						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movie.iscore}} </p>
+						<p class="runtime">Runtime: {{movie.runtime}}</p>
+						<p class="released">Released: {{movie.released}} | Rated: {{movie.rating}}</p>
+						<p class="websites">IMBD: <a> {{movie.imdb}} </a></p>
+						<p class="clip">Clip: <a>{{movie.url}}</a></p>
+                      </p>
+					  </div>
+					  <div class="card-footer">
+						<span class="me-3"><i class="bi bi-hand-thumbs-up"></i> {{ movie.likes }}</span>
 			            <div class="social">
-			              <p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{likes}}</p>
-			              <p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{dislikes}}</p>
+			              <p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movie.likes}}</p>
+			              <p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movie.dislikes}}</p>
 			            </div>
+						</div>
+						
 	            </div>
+				</div>
 	        </div>
 
 	      </div>
