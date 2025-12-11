@@ -41,6 +41,13 @@ const vue_app = Vue.createApp({
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            changePoster(movieIndex) {
+                  if (this.movies[movieIndex].posterindex < this.movies[movieIndex].posters.length - 1) {
+                        this.movies[movieIndex].posterindex++
+                  } else {
+                        this.movies[movieIndex].posterindex = 0
+                  }
+            }
       }
 })
 
