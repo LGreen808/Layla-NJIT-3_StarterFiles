@@ -127,7 +127,7 @@
     "runtime": "1 Hour 52 Min",
     "released": [2012, 9, 28],
     "video": { "url": "https://www.youtube.com/watch?v=8dItOM6eYXY" },
-    "posters": ["img/Pitch1.jpg", "img/Pitch2.jpg", "img/Pitch3.jpg"],
+    "posters": ["img/Pitch1.jpg", "img/Pitch2.avif", "img/Pitch3.jpg"],
     "imdb": "https://www.imdb.com/title/tt1981677/",
     "likes": 812,
     "dislikes": 101,

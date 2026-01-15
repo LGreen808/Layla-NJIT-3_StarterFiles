@@ -34,37 +34,32 @@
 
 	      <div class="row">
 
-	        <div class="col-md-6">
+	        <!--I used AI to break down step 6 for me, it helped me make the loop and do a card for each movie-->
+			<div v-for="(movie, index) in movies" :key="index" class="col-md-6" :class="{ 'pirate-bg': movie.title === 'The Pirate', 'walt-bg': movie.title === 'Walt Before Mickey', 'pitch-bg': movie.title === 'Pitch Perfect', 'valance-bg': movie.title === 'The Man Who Shot Liberty Valance', 'jersey-bg': movie.title === 'Jersey Boys', 'hot-bg': movie.title === 'Some Like It Hot', 'saturday-bg': movie.title === 'Saturday Night', 'rocket-bg': movie.title === 'Rocketman', 'wayne-bg': movie.title === 'Wayne\\'s World' }">
 	            <div class="thumbnail">
-                   <div class="row">
-						
-						
-						    
-                        <!--I used AI to break down step 6 for me, it helped me make the loop and do a card for each movie-->
-						<div v-for="(movie, index) in movies" :key="index">
-						<div class="card h-100">
-					<img v-if="movies.length" :src="movie.posters[movie.posterindex]" class="poster img-fluid" alt="Movie poster" @click="changePoster(index)" />
- 						<div class="imageInfo">{{movie.posterindex}}</div>
+					<div class="card h-100">
+						<img v-if="movies.length" :src="movie.posters[movie.posterindex]" class="poster img-fluid" alt="Movie poster" @click="changePoster(index)" />
+						<div class="imageInfo">{{movie.posterindex}}</div>
 						<div class="card-body">
-						<h5 class="card-title">{{movie.title}}</h5>
-			          <p class="card-text">
-						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movie.iscore}} </p>
-						<p class="runtime">Runtime: {{movie.runtime}}</p>
-						<p class="released">Released: {{movie.released}} | Rated: {{movie.rating}}</p>
-						<p class="websites">IMBD: <a> {{movie.imdb}} </a></p>
-						<p class="clip">Clip: <a>{{movie.url}}</a></p>
-                      </p>
-					  </div>
-					  <div class="card-footer">
-			            <div class="social">
-			              <p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true" style="color: green;"></i> {{movie.likes}}</p>
-			              <p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movie.dislikes}}</p>
-			            </div>
+							<h5 class="card-title">{{movie.title}}</h5>
+							<p class="card-text">
+								<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movie.iscore}} </p>
+								<p class="runtime">Runtime: {{movie.runtime}}</p>
+								<p class="released">Released: {{movie.released}} | Rated: {{movie.rating}}</p>
+								<p class="websites">IMBD: <a :href="movie.imdb" target="_blank"> {{movie.imdb}} </a></p>
+								<p class="clip">Clip: <a :href="movie.video.url" target="_blank">Watch Clip</a></p>
+							</p>
+						</div>
+						<div class="card-footer">
+							<div class="social">
+								<p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true" style="color: green;"></i> {{movie.likes}}</p>
+								<p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movie.dislikes}}</p>
+							</div>
 						</div>
 						
-	            </div>
+					</div>
 				</div>
-	        </div>
+			</div>
 
 	      </div>
 	    </div>

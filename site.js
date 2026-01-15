@@ -35,7 +35,7 @@ const vue_app = Vue.createApp({
             movies: [],
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
             title: "Layla's Top Movies",
-            owner: "Layla",
+            owner: "Layla Green",
             github: "http://www.github.com/mjslee/is219lee-p3"
         }
       },

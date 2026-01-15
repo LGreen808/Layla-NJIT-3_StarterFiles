@@ -11,6 +11,7 @@ body {
 /* This stylizes the header area */
 .header {
     padding: 15px;
+    text-align: center;
 }
 .header h1 {
     display: inline-block;
@@ -32,6 +33,66 @@ body {
     border-radius: 0;
     background-color:#dddddd;
 }
+
+/* This stylizes the card background */
+.card {
+    background-color: #dddddd;
+}
+
+/* This stylizes the Pirate movie card with tan background */
+.pirate-bg .thumbnail,
+.pirate-bg .card {
+    background-color: tan;
+}
+
+/* This stylizes the Walt Before Mickey card with light blue background */
+.walt-bg .thumbnail,
+.walt-bg .card {
+    background-color: lightblue;
+}
+
+/* This stylizes the Pitch Perfect card with light navy blue background */
+.pitch-bg .thumbnail,
+.pitch-bg .card {
+    background-color: steelblue;
+}
+
+/* This stylizes the Man Who Shot Liberty Valance card with grey background */
+.valance-bg .thumbnail,
+.valance-bg .card {
+    background-color: grey;
+}
+
+/* This stylizes the Jersey Boys card with red background */
+.jersey-bg .thumbnail,
+.jersey-bg .card {
+    background-color: maroon;
+}
+/* This stylizes the Some Like It Hot card with silver background */
+.hot-bg .thumbnail,
+.hot-bg .card {
+    background-color: silver;
+}
+
+/* This stylizes the Saturday Night card with yellow background */
+.saturday-bg .thumbnail,
+.saturday-bg .card {
+    background-color: yellow;
+}
+
+/* This stylizes the Rocketman card with light purple background */
+.rocket-bg .thumbnail,
+.rocket-bg .card {
+    background-color: rgb(203, 3, 203);
+}
+
+/* This stylizes the Wayne's World card with orange background */
+.wayne-bg .thumbnail,
+.wayne-bg .card {
+    background-color: orange;
+}
+
+
 .thumbnail img {
     margin-top: 10px;
     margin-bottom: 30px;
