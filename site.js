@@ -51,4 +51,4 @@ const vue_app = Vue.createApp({
       }
 })
 
-vue_app.mount("#vue_app")
+vue_app.mount('#vue_app')
