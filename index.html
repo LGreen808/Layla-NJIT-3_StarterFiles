@@ -45,8 +45,8 @@
 							<p class="card-text">
 								<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movie.iscore}} </p>
 								<p class="runtime">Runtime: {{movie.runtime}}</p>
-								<p class="released">Released: {{movie.released}} | Rated: {{movie.rating}}</p>
-								<p class="websites">IMBD: <a :href="movie.imdb" target="_blank"> {{movie.imdb}} </a></p>
+								<p class="released">Released: {{movie.released[0]}}-{{String(movie.released[1]).padStart(2, '0')}}-{{String(movie.released[2]).padStart(2, '0')}} | Rated: {{movie.rating}}</p>
+								<p class="websites">IMDB: <a :href="movie.imdb" target="_blank"> {{movie.imdb}} </a></p>
 								<p class="clip">Clip: <a :href="movie.video.url" target="_blank">Watch Clip</a></p>
 							</p>
 						</div>
