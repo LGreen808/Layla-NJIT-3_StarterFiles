@@ -5,7 +5,7 @@ body {
     padding: 0;
     width: 100%;
     overflow: auto;
-    background-image: url(img/geometry.jpg);
+    background-image: url(img/Background1.jpg);
 }
 
 /* This stylizes the header area */
@@ -15,12 +15,12 @@ body {
 }
 .header h1 {
     display: inline-block;
-    color: white;
+    color:  white;
 }
 
 /* This stylizes the main page area */
 .main {
-    background-color: #f2f2f2;
+    background-color: darkblue;
     padding: 40px 0;
 }
 
