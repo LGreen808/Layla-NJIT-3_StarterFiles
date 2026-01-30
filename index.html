@@ -35,25 +35,24 @@
 	      <div class="row">
 
 	        <!--I used AI to break down step 6 for me, it helped me make the loop and do a card for each movie-->
-			<div v-for="(movie, index) in movies" :key="index" class="col-md-6" :class="{ 'pirate-bg': movie.title === 'The Pirate', 'walt-bg': movie.title === 'Walt Before Mickey', 'pitch-bg': movie.title === 'Pitch Perfect', 'valance-bg': movie.title === 'The Man Who Shot Liberty Valance', 'jersey-bg': movie.title === 'Jersey Boys', 'hot-bg': movie.title === 'Some Like It Hot', 'saturday-bg': movie.title === 'Saturday Night', 'rocket-bg': movie.title === 'Rocketman', 'wayne-bg': movie.title === 'Wayne\\'s World' }">
-	            <div class="thumbnail">
-					<div class="card h-100">
-						<img v-if="movies.length" :src="movie.posters[movie.posterindex]" class="poster img-fluid" alt="Movie poster" @click="changePoster(index)" />
-						<div class="imageInfo">{{movie.posterindex}}</div>
-						<div class="card-body">
-							<h5 class="card-title">{{movie.title}}</h5>
-							<p class="card-text">
+			<div v-for="(movie, index) in movies" :key="index" class="col-md-6" :class="getBgClass(movie)">
+            <div class="thumbnail">
+				<div class="card h-100">
+					<img v-if="movies.length" :src="movie.posters[movie.posterindex]" class="poster img-fluid" alt="Movie poster" @click="changePoster(index)" />
+					<div class="imageInfo">{{movie.posterindex}}</div>
+					<div class="card-body">
+						<h5 class="card-title">{{movie.title}}</h5>
+						<div class="card-text">
 								<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movie.iscore}} </p>
 								<p class="runtime">Runtime: {{movie.runtime}}</p>
 								<p class="released">Released: {{movie.released[0]}}-{{String(movie.released[1]).padStart(2, '0')}}-{{String(movie.released[2]).padStart(2, '0')}} | Rated: {{movie.rating}}</p>
 								<p class="websites">IMDB: <a :href="movie.imdb" target="_blank"> {{movie.imdb}} </a></p>
 								<p class="clip">Clip: <a :href="movie.video.url" target="_blank">Watch Clip</a></p>
-							</p>
-						</div>
+							</div>
 						<div class="card-footer">
 							<div class="social">
-								<p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true" style="color: green;"></i> {{movie.likes}}</p>
-								<p class="dislikes"><i class="bi bi-hand-thumbs-down"></i> {{movie.dislikes}}</p>
+								<button class="btn btn-success btn-sm me-2" @click="likeMovie(index)"><i class="bi bi-hand-thumbs-up"></i> {{movie.likes}}</button>
+								<button class="btn btn-danger btn-sm me-2" @click="dislikeMovie(index)"><i class="bi bi-hand-thumbs-down"></i> {{movie.dislikes}}</button>
 							</div>
 						</div>
 						

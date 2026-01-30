@@ -147,7 +147,7 @@ const vue_app = Vue.createApp({
     "runtime": "2 Hour 3 Min",
     "released": [1962, 4, 22],
     "video": { "url": "https://www.youtube.com/watch?v=hP77V2X1Biw" },
-    "posters": ["img/Ford1.jpg", "img/Ford3.jpg"],
+    "posters": ["img/Ford1.jpg","img/Ford3.jpg", "img/John.jpg"],
     "imdb": "https://www.imdb.com/title/tt0056217/",
     "likes": 812,
     "dislikes": 101,
@@ -184,12 +184,36 @@ const vue_app = Vue.createApp({
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+
+            /*My Website broke and it was not loading. So I asked agent to help me, and it came up with this below*/
+            getBgClass(movie) {
+                  switch (movie.title) {
+                        case "The Pirate": return 'pirate-bg';
+                        case "Walt Before Mickey": return 'walt-bg';
+                        case "Pitch Perfect": return 'pitch-bg';
+                        case "The Man Who Shot Liberty Valance": return 'valance-bg';
+                        case "Jersey Boys": return 'jersey-bg';
+                        case "Some Like It Hot": return 'hot-bg';
+                        case "Saturday Night": return 'saturday-bg';
+                        case "Rocketman": return 'rocket-bg';
+                        case "Wayne's World": return 'wayne-bg';
+                        default: return '';
+                  }
+            },
             changePoster(movieIndex) {
                   if (this.movies[movieIndex].posterindex < this.movies[movieIndex].posters.length - 1) {
                         this.movies[movieIndex].posterindex++
                   } else {
                         this.movies[movieIndex].posterindex = 0
-                  }
+                  }     
+            },
+
+            likeMovie(index) {
+              this.movies[index].likes++;
+            },
+
+            dislikeMovie(index) {
+              this.movies[index].dislikes++;
             }
       }
 })
